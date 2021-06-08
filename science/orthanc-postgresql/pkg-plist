@@ -1,0 +1,4 @@
+share/orthanc/plugins/libOrthancPostgreSQLIndex.so
+share/orthanc/plugins/libOrthancPostgreSQLIndex.so.4.0
+share/orthanc/plugins/libOrthancPostgreSQLStorage.so
+share/orthanc/plugins/libOrthancPostgreSQLStorage.so.4.0

@@ -1,0 +1,4 @@
+Orthanc can be extended with two plugins that replace the default SQLite
+engine of Orthanc with a PostgreSQL back-end.
+
+WWW: https://www.orthanc-server.com/static.php?page=postgresql
