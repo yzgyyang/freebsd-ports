@@ -1,8 +1,8 @@
 PORTNAME=	gophernicus
-DISTVERSION=	3.0.1
+DISTVERSION=	3.1.1
 CATEGORIES=	www
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	anton@antonmcclure.com
 COMMENT=	Modern full-featured and secure Gopher daemon
 
 LICENSE=	BSD2CLAUSE
