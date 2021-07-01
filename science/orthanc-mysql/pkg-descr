@@ -1,0 +1,5 @@
+Orthanc can be extended with two plugins that replace the default SQLite
+engine of Orthanc with a MySQL back-end. These plugins are compatible with
+MariaDB as well.
+
+WWW: https://www.orthanc-server.com/static.php?page=mysql
