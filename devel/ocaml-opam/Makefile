@@ -1,8 +1,7 @@
 # Created by: J. Giovannangeli
 
 PORTNAME=	opam
-PORTVERSION=	2.0.8
-PORTREVISION=	2
+PORTVERSION=	2.1.1
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/ocaml/opam/releases/download/${DISTVERSION}/
 PKGNAMEPREFIX=	ocaml-
@@ -38,5 +37,6 @@ RSYNC_RUN_DEPENDS=	rsync:net/rsync
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/opam-installer
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/opam
 
 .include <bsd.port.mk>
