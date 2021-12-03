@@ -1,12 +1,12 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
 
 PORTNAME=	requests
-PORTVERSION=	2.25.1
+PORTVERSION=	2.26.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	koobs@FreeBSD.org
+MAINTAINER=	ygy@FreeBSD.org
 COMMENT=	HTTP library written in Python for human beings
 
 LICENSE=	APACHE20

@@ -1,3 +1,3 @@
-TIMESTAMP = 1609030585
-SHA256 (requests-2.25.1.tar.gz) = 27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804
-SIZE (requests-2.25.1.tar.gz) = 102161
+TIMESTAMP = 1638509384
+SHA256 (requests-2.26.0.tar.gz) = b8aa58f8cf793ffd8782d3d8cb19e66ef36f7aba4353eec859e74678b01b07a7
+SIZE (requests-2.26.0.tar.gz) = 104433
