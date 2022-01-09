@@ -1,9 +1,9 @@
 PORTNAME=	cloudquery
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.16.0
+DISTVERSION=	0.18.0
 CATEGORIES=	net
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	ygy@FreeBSD.org
 COMMENT=	Transform cloud infrastructure into queryable SQL tables
 
 LICENSE=	MPL20
@@ -17,8 +17,8 @@ GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
 
 GH_TUPLE=	\
 		Masterminds:squirrel:v1.5.0:masterminds_squirrel/vendor/github.com/Masterminds/squirrel \
-		Microsoft:go-winio:v0.5.0:microsoft_go_winio/vendor/github.com/Microsoft/go-winio \
-		ProtonMail:go-crypto:04723f9f07d7:protonmail_go_crypto/vendor/github.com/ProtonMail/go-crypto \
+		Microsoft:go-winio:v0.5.1:microsoft_go_winio/vendor/github.com/Microsoft/go-winio \
+		ProtonMail:go-crypto:a4f6767435ab:protonmail_go_crypto/vendor/github.com/ProtonMail/go-crypto \
 		VividCortex:ewma:v1.2.0:vividcortex_ewma/vendor/github.com/VividCortex/ewma \
 		acarl005:stripansi:5a71ef0e047d:acarl005_stripansi/vendor/github.com/acarl005/stripansi \
 		acomagu:bufpipe:v1.0.3:acomagu_bufpipe/vendor/github.com/acomagu/bufpipe \
@@ -26,7 +26,8 @@ GH_TUPLE=	\
 		apparentlymart:go-textseg:v13.0.0:apparentlymart_go_textseg_v13/vendor/github.com/apparentlymart/go-textseg/v13 \
 		aws:aws-lambda-go:v1.23.0:aws_aws_lambda_go/vendor/github.com/aws/aws-lambda-go \
 		aws:aws-sdk-go:v1.42.1:aws_aws_sdk_go/vendor/github.com/aws/aws-sdk-go \
-		cloudquery:cq-provider-sdk:v0.5.1:cloudquery_cq_provider_sdk/vendor/github.com/cloudquery/cq-provider-sdk \
+		cenkalti:backoff:v4.1.1:cenkalti_backoff_v4/vendor/github.com/cenkalti/backoff/v4 \
+		cloudquery:cq-provider-sdk:v0.5.5:cloudquery_cq_provider_sdk/vendor/github.com/cloudquery/cq-provider-sdk \
 		creasty:defaults:v1.5.2:creasty_defaults/vendor/github.com/creasty/defaults \
 		davecgh:go-spew:v1.1.1:davecgh_go_spew/vendor/github.com/davecgh/go-spew \
 		doug-martin:goqu:v9.17.0:doug_martin_goqu_v9/vendor/github.com/doug-martin/goqu/v9 \
@@ -34,29 +35,31 @@ GH_TUPLE=	\
 		fatih:color:v1.13.0:fatih_color/vendor/github.com/fatih/color \
 		fsnotify:fsnotify:v1.4.9:fsnotify_fsnotify/vendor/github.com/fsnotify/fsnotify \
 		georgysavva:scany:v0.2.9:georgysavva_scany/vendor/github.com/georgysavva/scany \
+		getsentry:sentry-go:v0.12.0:getsentry_sentry_go/vendor/github.com/getsentry/sentry-go \
 		go-git:gcfg:v1.5.0:go_git_gcfg/vendor/github.com/go-git/gcfg \
 		go-git:go-billy:v5.3.1:go_git_go_billy_v5/vendor/github.com/go-git/go-billy/v5 \
 		go-git:go-git:v5.4.2:go_git_go_git_v5/vendor/github.com/go-git/go-git/v5 \
-		go-ini:ini:v1.51.0:go_ini_ini/vendor/gopkg.in/ini.v1 \
+		go-ini:ini:v1.51.1:go_ini_ini/vendor/gopkg.in/ini.v1 \
 		go-warnings:warnings:v0.1.2:go_warnings_warnings/vendor/gopkg.in/warnings.v0 \
 		go-yaml:yaml:496545a6307b:go_yaml_yaml_1/vendor/gopkg.in/yaml.v3 \
 		go-yaml:yaml:v2.4.0:go_yaml_yaml/vendor/gopkg.in/yaml.v2 \
-		gofrs:uuid:v4.0.0:gofrs_uuid/vendor/github.com/gofrs/uuid \
+		gofrs:uuid:v4.2.0:gofrs_uuid/vendor/github.com/gofrs/uuid \
 		golang-migrate:migrate:v4.15.0:golang_migrate_migrate_v4/vendor/github.com/golang-migrate/migrate/v4 \
-		golang:crypto:a769d52b0f97:golang_crypto/vendor/golang.org/x/crypto \
-		golang:net:04defd469f4e:golang_net/vendor/golang.org/x/net \
+		golang:crypto:089bfa567519:golang_crypto/vendor/golang.org/x/crypto \
+		golang:net:3b03d305991f:golang_net/vendor/golang.org/x/net \
 		golang:protobuf:v1.5.2:golang_protobuf/vendor/github.com/golang/protobuf \
 		golang:sync:036812b2e83c:golang_sync/vendor/golang.org/x/sync \
-		golang:sys:39ccf1dd6fa6:golang_sys/vendor/golang.org/x/sys \
+		golang:sys:69cdffdb9359:golang_sys/vendor/golang.org/x/sys \
 		golang:term:7de9c90e9dd1:golang_term/vendor/golang.org/x/term \
-		golang:text:v0.3.6:golang_text/vendor/golang.org/x/text \
+		golang:text:v0.3.7:golang_text/vendor/golang.org/x/text \
 		golang:xerrors:5ec99f83aff1:golang_xerrors/vendor/golang.org/x/xerrors \
 		google:go-cmp:v0.5.6:google_go_cmp/vendor/github.com/google/go-cmp \
-		google:go-genproto:c76a74d43a8e:google_go_genproto/vendor/google.golang.org/genproto \
+		google:go-genproto:f09f9a12af12:google_go_genproto/vendor/google.golang.org/genproto \
 		google:go-github:v35.2.0:google_go_github_v35/vendor/github.com/google/go-github/v35 \
 		google:go-querystring:v1.0.0:google_go_querystring/vendor/github.com/google/go-querystring \
 		google:uuid:v1.3.0:google_uuid/vendor/github.com/google/uuid \
-		grpc:grpc-go:v1.41.0:grpc_grpc_go/vendor/google.golang.org/grpc \
+		grpc-ecosystem:grpc-gateway:v1.16.0:grpc_ecosystem_grpc_gateway/vendor/github.com/grpc-ecosystem/grpc-gateway \
+		grpc:grpc-go:v1.42.0:grpc_grpc_go/vendor/google.golang.org/grpc \
 		hashicorp:errwrap:v1.1.0:hashicorp_errwrap/vendor/github.com/hashicorp/errwrap \
 		hashicorp:go-hclog:v1.0.0:hashicorp_go_hclog/vendor/github.com/hashicorp/go-hclog \
 		hashicorp:go-multierror:v1.1.1:hashicorp_go_multierror/vendor/github.com/hashicorp/go-multierror \
@@ -100,6 +103,8 @@ GH_TUPLE=	\
 		natefinch:lumberjack:v2.0.0:natefinch_lumberjack/vendor/gopkg.in/natefinch/lumberjack.v2 \
 		oklog:run:v1.1.0:oklog_run/vendor/github.com/oklog/run \
 		olekukonko:tablewriter:v0.0.5:olekukonko_tablewriter/vendor/github.com/olekukonko/tablewriter \
+		open-telemetry:opentelemetry-go:v1.2.0:open_telemetry_opentelemetry_go/vendor/go.opentelemetry.io/otel \
+		open-telemetry:opentelemetry-proto-go:v0.10.0:open_telemetry_opentelemetry_proto_go/vendor/go.opentelemetry.io/proto/otlp \
 		pelletier:go-toml:v1.8.1:pelletier_go_toml/vendor/github.com/pelletier/go-toml \
 		pkg:errors:v0.9.1:pkg_errors/vendor/github.com/pkg/errors \
 		pmezard:go-difflib:v1.0.0:pmezard_go_difflib/vendor/github.com/pmezard/go-difflib \
