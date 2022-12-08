@@ -1,5 +1,5 @@
 PORTNAME=	go
-DISTVERSION?=	g20220802
+DISTVERSION?=	g20221207
 PORTREVISION?=	0
 CATEGORIES=	lang
 MASTER_SITES?=	https://github.com/dmgk/go-bootstrap/releases/download/${BOOTSTRAP_TAG}/:bootstrap \
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 IGNORE=		fails to build with qemu-user-static
 .endif
 
-ONLY_FOR_ARCHS=	aarch64 amd64 armv6 armv7 i386
+ONLY_FOR_ARCHS=	aarch64 amd64 armv6 armv7 i386 riscv64
 
 RUN_DEPENDS=	${RUN_DEPENDS_${ARCH}}
 # ld.bfd from devel/binutils is needed for working cgo on aarch64
@@ -35,8 +35,8 @@ CPE_VENDOR=	golang
 .ifndef MASTERDIR
 USE_GITHUB=	yes
 GH_ACCOUNT=	golang
-# go1.19
-GH_TAGNAME=	43456202a1e55da55666fac9d56ace7654a65b64
+# go1.20rc1
+GH_TAGNAME=	9f0234214473dfb785a5ad84a8fc62a6a395cbc3
 .endif
 
 SHEBANG_FILES=	misc/wasm/go_js_wasm_exec \
@@ -63,7 +63,7 @@ V3_VARS=	GOAMD64=v3
 V4_DESC=	V3 instructions plus AVX512*
 V4_VARS=	GOAMD64=v4
 
-BOOTSTRAP_TAG=	go1.17.9
+BOOTSTRAP_TAG=	go1.19beta1-1531-g15e26698cc
 GO_SUFFIX=	${PKGNAMESUFFIX}
 
 GOARCH_aarch64=	arm64
@@ -71,6 +71,7 @@ GOARCH_amd64=	amd64
 GOARCH_armv6=	arm
 GOARCH_armv7=	arm
 GOARCH_i386=	386
+GOARCH_riscv64=	riscv64
 GOARM_armv6=	6
 GOARM_armv7=	7
 
