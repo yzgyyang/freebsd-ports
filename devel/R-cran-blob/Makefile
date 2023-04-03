@@ -1,5 +1,5 @@
 PORTNAME=	blob
-DISTVERSION=	1.2.3
+DISTVERSION=	1.2.4
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -10,8 +10,7 @@ WWW=		https://blob.tidyverse.org
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	R-cran-rlang>0:devel/R-cran-rlang \
-		R-cran-vctrs>=0.2.1:devel/R-cran-vctrs
+RUN_DEPENDS=	R-cran-rlang>0:devel/R-cran-rlang
 TEST_DEPENDS=	R-cran-covr>0:devel/R-cran-covr \
 		R-cran-crayon>0:devel/R-cran-crayon \
 		R-cran-pillar>=1.2.1:devel/R-cran-pillar \
