@@ -1,12 +1,11 @@
 PORTNAME=	fBasics
-DISTVERSION=	4022.94
-PORTREVISION=	1
+DISTVERSION=	4032.96
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
 MAINTAINER=	ygy@FreeBSD.org
 COMMENT=	Rmetrics - Markets and Basic Statistics
-WWW=		https://r-forge.r-project.org/scm/viewvc.php/pkg/fBasics/?root=rmetrics
+WWW=		https://geobosh.github.io/fBasicsDoc/
 
 LICENSE=	GPLv2+
 
